@@ -113,3 +113,8 @@
 // const dog = new Animal('dog', 'pit bull', 'brown and white', '3ft', '3 ft');
 // dog.speak();
 // STEP 9
+class Words extends String{
+    findWords(str){
+
+    }
+}
