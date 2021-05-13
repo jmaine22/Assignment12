@@ -83,33 +83,33 @@
 // const dog = new Animal('dog', 'pit bull', 'brown and white', '3ft', '3 ft');
 // dog.speak();
 // STEP 8
-class Animal {
-    constructor(type, breed, color, height, length){
-         let _type = type;
-         let _breed = breed;
-         let _color = color;
-         let _height = height;
-         let _length =  length;
-         let animals = [_type, _breed, _color, _height, _length]
-        for(let animal in animals){
-            console.log(animals[animal]);
-        }
-        let checkType = function(){
-            if (_type === 'dog'){
-             console.log( 'dog');   
-            }
-            else {
-                console.log( 'cat');
-            }
-        }
-        this.speak = function(){
-            return checkType();
-        }
-    }
+// class Animal {
+//     constructor(type, breed, color, height, length){
+//          let _type = type;
+//          let _breed = breed;
+//          let _color = color;
+//          let _height = height;
+//          let _length =  length;
+//          let animals = [_type, _breed, _color, _height, _length]
+//         for(let animal in animals){
+//             console.log(animals[animal]);
+//         }
+//         let checkType = function(){
+//             if (_type === 'dog'){
+//              console.log( `The ${_type} has made a noise!`);   
+//             }
+//             else {
+//                 console.log( `The ${_type} has made a noise!`);
+//             }
+//         }
+//         this.speak = function(){
+//             return checkType();
+//         }
+//     }
     
-}
-const cat = new Animal('cat', 'pet', 'black', '2ft', '2ft');
-cat.speak();
-const dog = new Animal('dog', 'pit bull', 'brown and white', '3ft', '3 ft');
-dog.speak();
+// }
+// const cat = new Animal('cat', 'pet', 'black', '2ft', '2ft');
+// cat.speak();
+// const dog = new Animal('dog', 'pit bull', 'brown and white', '3ft', '3 ft');
+// dog.speak();
 // STEP 9
