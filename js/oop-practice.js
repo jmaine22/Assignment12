@@ -56,32 +56,60 @@
 // const monkey = new Animal('monkey', 'africa', 'brown', '2ft', '2.2 ft');
 // const bear = new Animal('bear', 'grizzle', 'brown', '8ft', '9 ft');
 // STEP 7
+// class Animal {
+//     constructor(type, breed, color, height, length){
+//          this.type = type;
+//          this.breed = breed;
+//          this.color = color;
+//          this.height = height;
+//          this.length =  length;
+//          let animals = [this.type, this.breed, this.color, this.height, this.length]
+        
+//         for(let animal in animals){
+//             console.log(animals[animal]);
+//         }
+//     }
+//     speak = function () {
+//         if (this.type == 'dog') {
+//             //console.log(this.type);
+//            console.log( 'The ' +  this.color + " " + this.type + ' is barking!');
+//         }else if (this.type == 'cat') {
+//             console.log( 'The ' + this.color + " " + this.type + ' is meowing!');
+//         }
+//     }
+// }
+// const cat = new Animal('cat', 'pet', 'black', '2ft', '2ft');
+// cat.speak();
+// const dog = new Animal('dog', 'pit bull', 'brown and white', '3ft', '3 ft');
+// dog.speak();
+// STEP 8
 class Animal {
     constructor(type, breed, color, height, length){
-         this.type = type;
-         this.breed = breed;
-         this.color = color;
-         this.height = height;
-         this.length =  length;
-         let animals = [this.type, this.breed, this.color, this.height, this.length]
-        
+         let _type = type;
+         let _breed = breed;
+         let _color = color;
+         let _height = height;
+         let _length =  length;
+         let animals = [_type, _breed, _color, _height, _length]
         for(let animal in animals){
             console.log(animals[animal]);
         }
-    }
-    speak = function () {
-        if (this.type == 'dog') {
-            //console.log(this.type);
-           console.log( 'The ' +  this.color + " " + this.type + ' is barking!');
-        }else if (this.type == 'cat') {
-            console.log( 'The ' + this.color + " " + this.type + ' is meowing!');
+        let checkType = function(){
+            if (_type === 'dog'){
+             console.log( 'dog');   
+            }
+            else {
+                console.log( 'cat');
+            }
+        }
+        this.speak = function(){
+            return checkType();
         }
     }
+    
 }
 const cat = new Animal('cat', 'pet', 'black', '2ft', '2ft');
 cat.speak();
 const dog = new Animal('dog', 'pit bull', 'brown and white', '3ft', '3 ft');
 dog.speak();
-// STEP 8
-
 // STEP 9
