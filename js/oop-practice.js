@@ -41,14 +41,20 @@ const dog = new Dog();
 // STEP 6
 class Animal {
     constructor(type, breed, color, height, length){
-        this.type = type;
-        this.breed = breed;
-        this.color = color;
-        this.height = height;
-        this.length = length;
+         this.type = type;
+         this.breed = breed;
+         this.color = color;
+         this.height = height;
+         this.length = length;
+         let animals = [this.type, this.breed, this.color, this.height, this.length]
+        
+        for(let animal in animals){
+            console.log(animals);
+        }
     }
-    
 }
+const monkey = new Animal('monkey', 'africa', 'brown', '2ft', '2.2 ft');
+const bear = new Animal('bear', 'grizzle', 'brown', '8ft', '9 ft');
 // STEP 7
 
 // STEP 8
